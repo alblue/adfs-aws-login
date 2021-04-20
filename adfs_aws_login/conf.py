@@ -98,7 +98,7 @@ class Config:
         if not self.ROLE_ARN:
             self.ROLE_ARN = config_section.get("adfs_role_arn", "")
         if not self.DEFAULT_USERNAME:
-            self.DEFAULT_USERNAME = config_section.get("adfs_default_username", None)
+            self.DEFAULT_USERNAME = config_section.get("adfs_default_username", "")
         if not self.DURATION:
             conf_duration = config_section.get("adfs_session_duration", "")
             if conf_duration.isdigit():
